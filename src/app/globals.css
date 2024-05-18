@@ -1,6 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "clash-display-medium";
+    src: url("/fonts/ClashDisplay-Medium.woff2") format("woff2");
+    font-weight: 500;
+    font-display: swap;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "clash-display-semibold";
+    src: url("/fonts/ClashDisplay-Semibold.woff2") format("woff2");
+    font-weight: 600;
+    font-display: swap;
+    font-style: normal;
+  }
+}
+
+@layer components {
+  .card {
+    @apply cursor-pointer overflow-hidden relative flex lg:flex-col gap-3  bg-white rounded-[16px] px-[32px] py-[20px];
+  }
+
+  .bg-card-pattern {
+    @apply absolute top-0 right-0 w-[60%] h-[100%];
+  }
+
+  .card-title {
+    @apply font-clash-display-semibold lg:text-[20px] lg:leading-[26px] -tracking-[2%];
+  }
+
+  .card-text {
+    @apply font-jakarta  leading-[25.6px];
+  }
+
+  .custom-list-icon {
+    @apply before:content-[''] before:inline-block before:w-4 before:h-4 before:bg-custom-list-icon before:bg-no-repeat before:bg-center flex items-center;
+  }
+}
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -17,6 +59,16 @@
 }
 
 body {
+  font-family: "clash-display", sans-serif !important;
+  font-weight: 500;
+  overflow-x: hidden;
+}
+
+main {
+  overflow-x: hidden;
+}
+
+/* body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -24,10 +76,14 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
-}
+} */
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.seperator {
+  border: 1px solid rgba(229, 229, 229, 0.2);
 }
