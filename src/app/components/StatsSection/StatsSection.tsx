@@ -3,6 +3,8 @@ import StatsImage from "/public/assets/img/stats-image.png";
 export const StatsSection = () => {
   return (
     <div className="bg-[#fff] min-h-[50vh] relative grid-section-cotainer w-full flex flex-col  md:flex-row justify-between items-center gap-10 px-10 py-10 md:px-40 md:py-40">
+      <div className="bg-[url(/assets/img/union-size-2.svg)] bg-cover absolute bottom-20 left-40 w-[100px] h-[100px]"></div>
+      <div className="bg-[url(/assets/img/union-size-1.svg)] bg-cover absolute top-5 right-5 w-[100px] h-[100px]"></div>
       <div className="left-column order-2 md:order-1 flex-1">
         <div className="title text-primary font-clash-display-semibold text-[24px] leading-[30px] md:text-3xl md:leading-3xl mb-3">
           Introducing FundedNext Stellar Challenge 🙌

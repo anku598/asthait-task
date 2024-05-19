@@ -13,8 +13,9 @@ export const Footer = () => {
           Join the Global Community for the Traders ✌️
         </div>
 
-        <button className="flex py-3 px-7  text-[18px] leading-[24px] bg-btnColor text-white font-jakarta rounded-[10px] shadow-md hover:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-400 focus:ring-opacity-75">
+        <button className="flex items-center py-3 px-7  text-[18px] leading-[24px] bg-btnColor text-white font-jakarta rounded-[10px] shadow-md  hover:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-400 focus:ring-opacity-75">
           Join Discord
+          <Image className="ml-2" src={discord} alt="discord icon" />
         </button>
       </div>
 
@@ -45,7 +46,7 @@ export const Footer = () => {
 
         <div className="menu-container lg:flex-1 flex-2 flex flex-col lg:items-center">
           <h3 className="mb-3 font-jakarta font-bold">Important Link</h3>
-          <ul className="flex flex-col gap-2 font-jakarta text-[16px]">
+          <ul className="flex flex-col gap-2 font-jakarta text-[16px] lg:pl-[12px]">
             <Link href={"/"}>Overview</Link>
             <Link href={"/"}>Affiliate Partner</Link>
             <Link href={"/"}>Payment Partner</Link>
@@ -55,7 +56,7 @@ export const Footer = () => {
 
         <div className="menu-container lg:flex-1 flex-2 flex flex-col lg:items-center">
           <h3 className="mb-3 font-jakarta font-bold">Important Link</h3>
-          <ul className="flex flex-col gap-2 font-jakarta text-[16px]">
+          <ul className="flex flex-col gap-2 font-jakarta text-[16px] lg:pl-[12px]">
             <Link href={"/"}>Overview</Link>
             <Link href={"/"}>Affiliate Partner</Link>
             <Link href={"/"}>Payment Partner</Link>
@@ -65,7 +66,7 @@ export const Footer = () => {
 
         <div className="menu-container flex-1 flex flex-col lg:items-center">
           <h3 className="mb-3 font-jakarta font-bold">Important Link</h3>
-          <ul className="flex flex-col gap-2 font-jakarta text-[16px]">
+          <ul className="flex flex-col gap-2 font-jakarta text-[16px] lg:pl-[12px]">
             <Link href={"/"}>Overview</Link>
             <Link href={"/"}>Affiliate Partner</Link>
             <Link href={"/"}>Payment Partner</Link>
@@ -83,7 +84,7 @@ export const Footer = () => {
           </p>
         </div>
 
-        <div className="flex gap-4 justify-between items-center text-[12px] md:text-[20px]">
+        <div className="flex gap-4 justify-between items-center text-[12px] md:text-[16px]">
           <a href="#">Cookie Policy</a>
           <a href="#">Cookie Policy</a>
           <a href="#">Cookie Policy</a>
