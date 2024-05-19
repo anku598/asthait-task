@@ -29,7 +29,7 @@ export const Header = () => {
               <div className="font-clash-display-medium text-[25px] leading-[30px] md:text-2xl md:leading-2xl">
                 195+
               </div>
-              <div className="font-jakarta text-[13px] leading-[20px] font-normal">
+              <div className="font-jakarta text-center lg:text-left text-[13px] leading-[20px] font-normal">
                 Countries covered
               </div>
             </div>
@@ -38,7 +38,7 @@ export const Header = () => {
               <div className="font-clash-display-medium text-[25px] leading-[30px] md:text-2xl md:leading-2xl">
                 $51M+
               </div>
-              <div className="font-jakarta text-[13px] leading-[20px] font-normal">
+              <div className="font-jakarta text-center lg:text-left text-[13px] leading-[20px] font-normal">
                 Total Payout
               </div>
             </div>
@@ -47,7 +47,7 @@ export const Header = () => {
               <div className="font-clash-display-medium text-[25px] leading-[30px] md:text-2xl md:leading-2xl">
                 $51k+
               </div>
-              <div className="font-jakarta text-[13px] leading-[20px] font-normal">
+              <div className="font-jakarta  text-center lg:text-left text-[13px] leading-[20px] font-normal">
                 Funded Traders
               </div>
             </div>

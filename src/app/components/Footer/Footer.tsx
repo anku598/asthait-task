@@ -21,7 +21,7 @@ export const Footer = () => {
 
       <div className="seperator"></div>
 
-      <div className="footer-menu-section w-full gap-10 lg:gap-5 flex flex-wrap lg:flex-row justify-between">
+      <div className="footer-menu-section w-full gap-10 lg:gap-5 flex flex-wrap flex-col  lg:flex-row justify-between">
         <div className="about-text lg:flex-1 flex-4 font-jakarta font-normal leading-[24px] lg:w-auto w-full">
           <p>
             Empowering global traders with unrivalled financial support.
@@ -84,7 +84,7 @@ export const Footer = () => {
           </p>
         </div>
 
-        <div className="flex gap-4 justify-between items-center text-[12px] md:text-[16px]">
+        <div className="flex gap-4 justify-center lg:justify-between items-center flex-wrap text-[10px] md:text-[16px]">
           <a href="#">Cookie Policy</a>
           <a href="#">Cookie Policy</a>
           <a href="#">Cookie Policy</a>

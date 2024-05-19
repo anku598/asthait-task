@@ -36,34 +36,36 @@ export const GridSection = () => {
     <div className="bg-[#F0F2FF] min-h-[50vh] relative grid-section-cotainer w-full flex flex-col  xl:flex-row justify-between items-center gap-10 px-10 py-10 md:px-40 md:py-40">
       <div className="bg-[url(/assets/img/union-one.svg)] bg-cover absolute bottom-20 left-40 w-[100px] h-[100px]"></div>
       <div className="left-column flex-1">
-        <div className="title text-primary font-clash-display-semibold md:text-3xl md:leading-3xl text-[24px] leading-[30px] mb-3">
+        <div className="title text-primary text-center lg:text-left font-clash-display-semibold md:text-3xl md:leading-3xl text-[24px] leading-[30px] mb-3">
           What Makes FundedNext Different?
         </div>
-        <p className="sub-text">
+        <p className="sub-text text-center lg:text-left">
           FundedNext offers no time limits in its funding challenges.
         </p>
 
-        <div className="mt-3 flex items-center -space-x-2 overflow-hidden">
-          <img
-            className="inline-block h-12 w-12 rounded-full ring-2 ring-white"
-            src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-            alt=""
-          />
-          <img
-            className="inline-block h-12 w-12 rounded-full ring-2 ring-white"
-            src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-            alt=""
-          />
-          <img
-            className="inline-block h-12 w-12 rounded-full ring-2 ring-white"
-            src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=256&h=256&q=80"
-            alt=""
-          />
-
-          <div className="inline-flex items-center justify-center h-12 w-12 rounded-full bg-white font-bold">
-            +3k
+        <div className=" mt-5 lg:mt-3 flex flex-col lg:flex-row items-center -space-x-2">
+          <div className="items-center -space-x-2">
+            <img
+              className="inline-block h-12 w-12 rounded-full ring-2 ring-white"
+              src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+              alt=""
+            />
+            <img
+              className="inline-block h-12 w-12 rounded-full ring-2 ring-white"
+              src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+              alt=""
+            />
+            <img
+              className="inline-block h-12 w-12 rounded-full ring-2 ring-white"
+              src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=256&h=256&q=80"
+              alt=""
+            />
+            <div className="inline-flex items-center justify-center h-12 w-12 rounded-full bg-white font-bold">
+              +3k
+            </div>
           </div>
-          <div className="mt-3 lg:pl-4  text-sm pl-6 md:pl-0">
+
+          <div className="mt-3 lg:pl-4  text-sm  md:pl-0">
             <h4>Our Happy Customer</h4>
             <div className="flex gap-2">
               {/* <img src={star} alt="Star Icon" /> */}
