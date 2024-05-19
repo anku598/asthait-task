@@ -19,7 +19,7 @@ export const Header = () => {
           </div>
 
           <div className="cta-button hidden lg:block">
-            <button class="py-3 px-7 text-[18px] leading-[24px] bg-btnColor text-white font-jakarta rounded-[10px] shadow-md hover:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-400 focus:ring-opacity-75">
+            <button className="py-3 px-7 text-[18px] leading-[24px] bg-btnColor text-white font-jakarta rounded-[10px] shadow-md hover:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-400 focus:ring-opacity-75">
               Get up to $300,000 funds 🙌
             </button>
           </div>
@@ -54,7 +54,7 @@ export const Header = () => {
           </div>
 
           <div className="cta-button block lg:hidden mt-10 text-center">
-            <button class="py-3 px-7 text-[18px] leading-[24px] bg-btnColor text-white font-jakarta rounded-[10px] shadow-md hover:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-400 focus:ring-opacity-75">
+            <button className="py-3 px-7 text-[18px] leading-[24px] bg-btnColor text-white font-jakarta rounded-[10px] shadow-md hover:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-400 focus:ring-opacity-75">
               Get up to $300,000 funds 🙌
             </button>
           </div>
