@@ -1,5 +1,7 @@
 import Image from "next/image";
+import { Widget } from "../Widget/Widget";
 import HeaderImg from "/public/assets/img/header-image.jpg";
+import dividerSvg from "/public/assets/img/seperate-lines.svg";
 
 export const Header = () => {
   return (
@@ -31,6 +33,7 @@ export const Header = () => {
                 Countries covered
               </div>
             </div>
+            <Image className="hidden md:block" src={dividerSvg} alt="Divider" />
             <div className="fact flex flex-col md:flex-row gap-4 items-center">
               <div className="font-clash-display-medium text-[25px] leading-[30px] md:text-2xl md:leading-2xl">
                 $51M+
@@ -39,6 +42,7 @@ export const Header = () => {
                 Total Payout
               </div>
             </div>
+            <Image className="hidden md:block" src={dividerSvg} alt="Divider" />
             <div className="fact flex flex-col md:flex-row gap-4 items-center">
               <div className="font-clash-display-medium text-[25px] leading-[30px] md:text-2xl md:leading-2xl">
                 $51k+
@@ -73,7 +77,7 @@ export const Header = () => {
           </div>
         </div>
       </div>
-      {/* <Widget /> */}
+      <Widget />
     </>
   );
 };

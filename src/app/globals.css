@@ -114,8 +114,16 @@ main {
   transition: background 1s ease-in-out;
 }
 
+.card-text {
+  color: #292d34cc;
+}
+
 .card-hover-effect:hover {
   background: linear-gradient(91.28deg, #3f68ff 0%, #cd63ff 100%);
+  color: #fff;
+}
+
+.card-hover-effect:hover .card-text {
   color: #fff;
 }
 

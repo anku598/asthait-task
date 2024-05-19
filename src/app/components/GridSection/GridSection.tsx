@@ -43,27 +43,27 @@ export const GridSection = () => {
           FundedNext offers no time limits in its funding challenges.
         </p>
 
-        <div class="mt-3 flex items-center -space-x-2 overflow-hidden">
+        <div className="mt-3 flex items-center -space-x-2 overflow-hidden">
           <img
-            class="inline-block h-12 w-12 rounded-full ring-2 ring-white"
+            className="inline-block h-12 w-12 rounded-full ring-2 ring-white"
             src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
             alt=""
           />
           <img
-            class="inline-block h-12 w-12 rounded-full ring-2 ring-white"
+            className="inline-block h-12 w-12 rounded-full ring-2 ring-white"
             src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
             alt=""
           />
           <img
-            class="inline-block h-12 w-12 rounded-full ring-2 ring-white"
+            className="inline-block h-12 w-12 rounded-full ring-2 ring-white"
             src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=256&h=256&q=80"
             alt=""
           />
 
-          <div className="inline-flex items-center justify-center h-12 w-12 rounded-full bg-white">
+          <div className="inline-flex items-center justify-center h-12 w-12 rounded-full bg-white font-bold">
             +3k
           </div>
-          <div class="mt-3  text-sm pl-6 md:pl-0">
+          <div class="mt-3 lg:pl-4  text-sm pl-6 md:pl-0">
             <h4>Our Happy Customer</h4>
             <div className="flex gap-2">
               {/* <img src={star} alt="Star Icon" /> */}
@@ -73,15 +73,27 @@ export const GridSection = () => {
           </div>
         </div>
       </div>
-      <div className="right-column flex-1 grid grid-cols-1 md:grid-cols-2 gap-4 ">
-        {cardsData.map((card, index) => (
-          <Card
-            key={index}
-            icon={card.icon}
-            title={card.title}
-            text={card.text}
-          />
-        ))}
+      <div className="right-column flex-1 grid grid-cols-1 md:grid-cols-2 gap-6 ">
+        <div className="flex gap-6 flex-col">
+          {cardsData.slice(0, 2).map((card, index) => (
+            <Card
+              key={index}
+              icon={card.icon}
+              title={card.title}
+              text={card.text}
+            />
+          ))}
+        </div>
+        <div className="flex gap-6 flex-col lg:mt-10">
+          {cardsData.slice(2).map((card, index) => (
+            <Card
+              key={index}
+              icon={card.icon}
+              title={card.title}
+              text={card.text}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );
