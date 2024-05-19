@@ -63,7 +63,7 @@ export const GridSection = () => {
           <div className="inline-flex items-center justify-center h-12 w-12 rounded-full bg-white font-bold">
             +3k
           </div>
-          <div class="mt-3 lg:pl-4  text-sm pl-6 md:pl-0">
+          <div className="mt-3 lg:pl-4  text-sm pl-6 md:pl-0">
             <h4>Our Happy Customer</h4>
             <div className="flex gap-2">
               {/* <img src={star} alt="Star Icon" /> */}
