@@ -87,3 +87,42 @@ main {
 .seperator {
   border: 1px solid rgba(229, 229, 229, 0.2);
 }
+
+.widget-item {
+  border-right: 1px solid rgba(229, 229, 229, 1);
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.marquee-container {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+
+.card-hover-effect {
+  transition: background 1s ease-in-out;
+}
+
+.card-hover-effect:hover {
+  background: linear-gradient(91.28deg, #3f68ff 0%, #cd63ff 100%);
+  color: #fff;
+}
+
+.marquee-content {
+  animation: marquee 25s linear infinite;
+}
+
+.widget-item {
+  white-space: nowrap;
+}

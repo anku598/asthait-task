@@ -10,7 +10,7 @@ interface CardProps {
 
 const Card: FC<CardProps> = ({ icon, title, text, className = "" }) => {
   return (
-    <div className={`card ${className}`}>
+    <div className={`card card-hover-effect ${className}`}>
       <div className="bg-card-pattern bg-[url(/assets/img/card-pattern.svg)] bg-cover"></div>
       <div className="card-icon flex flex-col gap-4">
         <Image src={icon} alt="Icon One" className="mb-6" />
